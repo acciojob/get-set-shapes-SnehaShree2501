@@ -21,15 +21,25 @@ class Rectangle {
 
 }
 
+// class Square extends Rectangle {
+//     _side;
+//     constructor(side){
+//         super(side,side);
+//     }
+//     getPerimeter(side){
+//     super.getPerimeter(side);
+//     }
+//     }
+
 class Square extends Rectangle {
-    _side;
     constructor(side){
-        super(side,side);
-    }
-    getPerimeter(side){
-    super.getPerimeter(side);
-    }
-    }
+     super(side, side);
+     this.side = side;
+     }
+   getPerimeter(){
+       return 4*this.side;
+   }
+}
 
 
 // Do not change the code below this line
