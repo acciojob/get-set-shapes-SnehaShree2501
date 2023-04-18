@@ -15,16 +15,22 @@ class Rectangle {
     getArea(){
         return(this.width*this.height);
     }
+    getPerimeter(){
+        return (2*(this.width+this.height));
+    }
+
 }
 
 class Square extends Rectangle {
+    _side;
     constructor(side){
         super(side,side);
     }
     getPerimeter(side){
-        return (4*side);
+    super.getPerimeter(side);
     }
-}
+    }
+
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
